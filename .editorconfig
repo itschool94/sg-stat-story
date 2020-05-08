@@ -1,0 +1,19 @@
+# editor Config
+# 이것으로 프로젝트 디렉토리에 .editorconfig 파일을 준비해 두면 설정이 적용된다.
+# (Visual Studio, Atom 등 유명 에디터에서 지원하고 있다)
+# 즉 git의 관리 대상으로 하면 프로젝트에서 통일 시킬 수 있다.
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = "utf-8"
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+[*.js]
+indent_size = 4
+
+[*.css]
+indent_size = 4

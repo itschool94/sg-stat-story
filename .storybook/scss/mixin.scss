@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/* common */
+@mixin afterBefore{
+	display:block;
+	content:'';
+	position:absolute;
+}
+@mixin clear {
+	content:'';
+	display:block;
+	clear:both;
+}
+@mixin alignMarginCalc($direction, $width, $height) {
+  @if $direction==both {
+    top:50%;
+    left:50%;
+    margin-top:-($height/2);
+    margin-left:-($width/2);
+  } @else if $direction==top {
+    top:50%;
+    margin-top:-($height/2);
+  } @else if $direction==left {
+    left:50%;
+    margin-left:-($height/2);
+  }
+}
+
+/* storybook */
+@mixin setBackground($color) {
+  border-color:$color;
+  background-color:$color;
+}
+
+@mixin setFont($color,$size) {
+	color:$color;
+	font-size:$size;
+}
+
+@mixin setButtonSize($padding,$size) {
+  padding:$padding;
+  font-size:$size;
+}
